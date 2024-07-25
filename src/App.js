@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Tours from "./Components/Tours";
+import data from "./data";
 
 const App = () => {
+
+  const [tours, setTours]=useState(data);
+
   return (
     <div>
       <h2>Plan with love</h2>
-      <Tours></Tours>
-    </div>
+
+      <Tours tours={tours}></Tours>
+    </div> 
   )
 };
 
