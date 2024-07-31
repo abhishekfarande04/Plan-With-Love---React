@@ -22,7 +22,7 @@ const App = () => {
           Refresh
         </button>
       </div>
-    )
+    ) 
   }
 
   return (
